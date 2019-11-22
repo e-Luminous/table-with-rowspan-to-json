@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <table class="centered striped bordered" border="1" id="example-table">
+        <thead>
+          <tr>
+            <th>Mass</th>
+            <th>Force</th>
+            <th>Acceleration</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td contenteditable="true" rowspan="2">3</td>
+                <td contenteditable="true">3.1</td>
+                <td contenteditable="true" rowspan="2">3</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">4.1</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true" rowspan="2">4</td>
+                <td contenteditable="true">4.1</td>
+                <td contenteditable="true" rowspan="2">4</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">4.1</td>
+            </tr>
+        </tbody>
+      </table>
+     
+      <br>
+        <button class="btn blue" id="row-button">Add row</button>
+        <button class="btn pink" id="convert-table">Convert</button>
+      <br><br>
+      
+
+      <textarea id="res"></textarea>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/addNewRow.js"></script>
+  </body>
+</html>
